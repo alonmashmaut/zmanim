@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>זמני היום - עיתים לבינה</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f1e8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background: #fefdfb;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(139, 123, 102, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            border: 1px solid #e8e3d8;
+        }
+
+        header {
+            background: #e8dcc8;
+            color: #5a4a3a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .iframe-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background: #f9f6f1;
+            padding: 15px;
+            text-align: center;
+            color: #7a6a55;
+            font-size: 0.9em;
+            border-top: 1px solid #e8e3d8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                height: 85vh;
+                border-radius: 10px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⏰ זמני היום</h1>
+            <p>לוח עיתים לבינה</p>
+        </header>
+        
+        <div class="iframe-container">
+            <iframe src="https://app.itimlabina.co.il" title="זמני היום - עיתים לבינה"></iframe>
+        </div>
+        
+        <footer>
+            <p>המידע מסופק על ידי <strong>עיתים לבינה</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
